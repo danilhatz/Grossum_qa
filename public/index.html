@@ -1,44 +1,41 @@
 <!DOCTYPE html>
-<html lang = 'en'>
+<html lang='en'>
+
 <head>
     <meta charset="UTF-8">
     <title>Login page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<div class="image"> </div>
-        <div class="title">
+
+<body>
+
+<header>
+    <div class="container">
+        <div class="image"></div>
+        <div class="title-login-page">
             <h1>Grossum QA forum</h1>
-            </div>
-        <div class="title2">
+
             <h2>Login Page</h2>
         </div>
+    </div>
+</header>
 
 <main>
-    <div class="container">
-        <div class="jumbotron text-center">
-            <form class="login" method="POST" action="/login">
-                <p>Username<input type="text" name="userid"/></p>
-
-                <p>Password<input type="password" name="pswrd"/></p>
-
-                <input type="submit" value="Login"/>
-                <input type="reset" value="Cancel"/>
-            </form>
-        </div>
+    <div id="container">
+        <form class="form-inline" method="POST" action="/login">
+            <label for="login-field">Login</label>
+            <div class="form-group">
+                <p><input type="text" class="form-control" id="login-field" name="userid" placeholder="Login"></p>
+            </div>
+            <label for="password-field">Password</label>
+            <div class="form-group">
+                <p><input type="text" class="form-control" id="password-field" name="pswrd" placeholder="Password"></p>
+            </div>
+        <input type="submit" value="Login"/>
+        <input type="reset" value="Cancel"/>
+        </form>
     </div>
 </main>
-
-
-<!--<script language="javascript">-->
-    <!--function check(form) {-->
-        <!--if (form.userid.value == "danil" && form.pswrd.value == "test") {-->
-            <!--window.open('main.html' + '?username=' + form.userid.value)-->
-        <!--}-->
-        <!--else {-->
-            <!--alert("Error Password or Username")-->
-        <!--}-->
-    <!--}-->
-<!--</script>-->
 </body>
 </html>

@@ -1,32 +1,56 @@
 <!DOCTYPE html>
-<html lang = 'en'>
+<html lang='en'>
 <head>
     <meta charset="UTF-8">
     <title>Grossum QA forum</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
+<div class="container1">
 
-<h1 class="titleN">Grossum's QA forum</h1>
+    <h1 class="text-center">Grossum QA forum</h1>
+
+<!--<div class="title">-->
+    <!--<h1>Grossum QA forum</h1>-->
+<!--</div>-->
 <p>Your name: <input type="text" id="name"></p>
+
 <p>Your company name: <input type="text" id="company"></p>
 
 <div id="talks"></div>
 
+
 <form id="newtalk">
     <h3>Submit a talk</h3>
-    Title: <input type="text" style="width: 40em" name="title">
-    <br>
-    Summary: <input type="text" style="width: 40em" name="summary">
-    <button type="submit">Send</button>
+    <div class="form-group">
+        <label for="new-talk-title">Title</label>
+        <input type="text" class="form-control" id="new-talk-title" name="title" placeholder="Title">
+    </div>
+    <div class="form-group">
+        <label for="new-talk-summary">Summary</label>
+        <input type="text" class="form-control" id="new-talk-summary" name="summary" placeholder="Summary">
+    </div>
+    <button type="submit" class="btn btn-default">Send</button>
 </form>
+
+
+<!--<form id="newtalk">-->
+    <!--<h3>Submit a talk</h3>-->
+    <!--Title: <input type="text" style="width: 40em" name="title">-->
+    <!--<br>-->
+    <!--Summary: <input type="text" style="width: 40em" name="summary">-->
+    <!--<button type="submit">Send</button>-->
+<!--</form>-->
 
 <div id="template" style="display: none">
     <div class="talk">
         <h2>{{title}}</h2>
+
         <div>by <span class="name">{{presenter}}</span> from <span class="company">{{company}}</span></div>
         <p>{{summary}}</p>
+
         <div class="comments"></div>
         <form>
             <input type="text" name="comment">
@@ -39,4 +63,8 @@
     </div>
 </div>
 
+</div>
+
 <script src="skillsharing_client.js"></script>
+</body>
+</html>

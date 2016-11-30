@@ -1,45 +1,14 @@
-.image{
+header .image{
     margin-left: auto;
     margin-right: auto;
     background-image: url(grossum.jpg);
-    background-repeat: no-repeat    ;
+    background-repeat: no-repeat;
     height: 200px;
     width: 650px;
 }
-.title {
-    margin-left: auto;
-    margin-right: auto;
-    width: 350px;
-    /*color: aliceblue;*/
-}
 
-.title2 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 170px
-}
-
-.hero{
-
-    background-repeat: no-repeat;;
-    background-size: cover;
-    background-position: center;
-    /*padding: 300px 0;*/
-    /*min-height: 400px;*/
-    /*position: relative;*/
-}
-
-main{
-    min-height: 300px;
-    padding: 50px 0;
-    color: darkblue;
-}
-
-.titleN{
-    color: red;
-    margin-left: auto;
-    margin-right: auto;
-    width: 170px
+.title-login-page {
+   text-align: center;
 }
 
 #talks {
