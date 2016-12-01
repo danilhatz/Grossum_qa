@@ -1,4 +1,4 @@
-header .image{
+header .image {
     margin-left: auto;
     margin-right: auto;
     background-image: url(grossum.jpg);
@@ -7,26 +7,49 @@ header .image{
     width: 650px;
 }
 
+.login-button {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.login-form {
+    text-align: center;
+    max-width: 400px;
+}
+
 .title-login-page {
-   text-align: center;
+    text-align: center;
+}
+
+.form-inline {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #talks {
-  margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 .talk {
-  margin-bottom: 5px;
-  padding: 8px;
-  border: 1px solid silver;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.user-data{
+    margin-top: 50px;
 }
 
 .name {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .comment {
-  font-style: italic;
+    font-style: italic;
 }
 
 .company {
@@ -36,6 +59,10 @@ header .image{
 }
 
 .talk h2 {
-  margin: 0;
-  font-size: 130%;
+    margin: 0;
+    font-size: 130%;
+}
+
+div.user-info {
+    text-align: center;
 }

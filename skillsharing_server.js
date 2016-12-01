@@ -51,7 +51,8 @@ router.add("POST", /^\/login$/ , function(request, response){
 
     let users = {
       'Danil': 'test',
-      'bu': 'bu'
+      'Admin': 'admin',
+      'Root':'root'
     };
 
 
